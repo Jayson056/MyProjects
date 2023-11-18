@@ -27,7 +27,7 @@ Feel free to connect with me on these platforms to stay updated on my coding jou
 
 <img  align="left" alt="Python" width="30px" style="padding-right:10px;" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"/>
 
-<li><a href="{{ url_for(https://www.instagram.com/jaysonapable/) }}" >Instagram</a></li>
+<a href="https://www.instagram.com/jaysonapable/" style="--socia"><i class='bx bxl-instagram'></i></a>
 
 - [LinkedIn](https://www.linkedin.com/in/jayson-combate-8721771b3/)
 - [Instagram](https://www.instagram.com/jaysonapable/)
