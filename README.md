@@ -19,6 +19,7 @@ I've Learning with a variety of technologies, and here are some of my favorites:
 <img align="left" alt="CSS" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" />
 <img align="left" alt="JavaScript" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
 
+#
 ## 🚀 GitHub Stats
 
 ![Jayson's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Jayson056&show_icons=true&theme=dark)
