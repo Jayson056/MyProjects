@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Files Uploader</title>
+    <script>
+        function addFileInput() {
+            var fileContainer = document.getElementById("file-container");
+            var newInput = document.createElement("input");
+            newInput.type = "file";
+            newInput.name = "resume";
+            newInput.accept = ".pdf";
+
+            var removeButton = document.createElement("button");
+            removeButton.type = "button";
+            removeButton.textContent = "Remove";
+            removeButton.onclick = function() {
+                fileContainer.removeChild(newInput);
+                fileContainer.removeChild(removeButton);
+                updateFileDisplay();
+            };
+
+            fileContainer.appendChild(newInput);
+            fileContainer.appendChild(removeButton);
+
+            updateFileDisplay();
+        }
+
+        function updateFileDisplay() {
+            var fileContainer = document.getElementById("file-container");
+            var fileListDisplay = document.getElementById("file-list-display");
+
+
+            fileListDisplay.innerHTML = "";
+            var fileInputs = fileContainer.querySelectorAll('input[type="file"]');
+            fileInputs.forEach(function(input, index) {
+                if (input.files.length > 0) {
+                    var fileName = input.files[0].name;
+                    fileListDisplay.innerHTML += "<div>" + fileName + "</div>";
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1><a style="color: lightblue;">Students Files Uploader</a></h1>
+        <form method="POST" action="/submit" enctype="multipart/form-data">
+            <h1><a style="color: rgb(136, 76, 76);">Student Information</a></h1>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+            <label for="subject">Subject:</label>
+            <select id="subject" name="subject" required>
+                <option value="CWTS">CWTS</option>
+                <option value="PROGRAMING01">PROGRAMING01</option>
+                <option value="INTRODUCTION TO COMPUTING">INTRODUCTION TO COMPUTING</option>
+                <option value="ACCOUNTING">ACCOUNTING</option>
+                <option value="MMW">MMW</option>
+                <option value="PURPOSIVE COMMUNICATION">PURPOSIVE COMMUNICATION</option>
+                <option value="PATFITH">PATFITH</option>
+                <option value="FILIPILOHIYA">FILIPILOHIYA</option>
+            </select>
+
+            <label for="fileType">File Type:</label>
+            <select id="fileType" name="fileType" required>
+                <option value="quizzes">Quizzes</option>
+                <option value="assessments">Assessments</option>
+                <option value="seatworks">Seatworks</option>
+                <option value="assignments">Assignments</option>
+                <option value="recitations">Recitations</option>
+                <option value="ttable">T-Table</option>
+            </select>
+
+            <div id="file-container">
+                <label for="resume">Resume (PDF only):</label>
+                <input type="file" name="resume" accept=".pdf">
+                <button style="margin-left: 8px; margin-bottom: 15px; margin-top: 1px;" type="button" onclick="addFileInput()">Add File</button>
+            </div>
+
+            <div id="file-list-display"></div>
+            <input type="hidden" name="file_count" id="file_count" value="1">
+            <input style="margin-top: 10px;" type="submit" value="Submit">
+
+        </form>
+    </div>
+</body>
+</html>
