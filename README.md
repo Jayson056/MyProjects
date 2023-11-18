@@ -25,13 +25,12 @@ I've Learning with a variety of technologies, and here are some of my favorites:
 Feel free to connect with me on these platforms to stay updated on my coding journey!
 ## 🌐 Social Media & Profiles
 
-<h1 rel="https://www.instagram.com/jaysonapable/"><img  align="left" alt="Python" width="30px" style="padding-right:10px;" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" - [GitHub](https://github.com/Jayson056) /></h>
-
-- [src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"](https://github.com/Jayson056)
+<h1 rel="https://www.instagram.com/jaysonapable/"><img  align="left" alt="Python" width="30px" style="padding-right:10px;" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" - [GitHub](https://github.com/Jayson056) /></h1>h1>
+<h1 rel="https://www.instagram.com/jaysonapable/">
 - [LinkedIn](https://www.linkedin.com/in/jayson-combate-8721771b3/)
 - [Instagram](https://www.instagram.com/jaysonapable/)
 - [YouTube](https://www.youtube.com/@JaysonApableCombate/)
-
+</h1>
 ## 📺 Latest YouTube Videos
 
 Check out my latest coding adventures on [YouTube](https://www.youtube.com/@JaysonApableCombate/). Don't forget to like, subscribe, and hit the notification bell!
