@@ -28,7 +28,7 @@ Feel free to connect with me on these platforms to stay updated on my coding jou
 <h1>
 <a href="https://www.instagram.com/jaysonapable/" style="--socia" sytle=""><i class='bx bxl-instagram'><img  align="left" alt="Python" width="30px" style="padding-right:10px;" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"/></i></a>
 
-<a href="https://www.youtube.com/@JaysonApableCombate/" style="--socia" sytle=""><i class='bx bxl-instagram'><img  align="left" alt="Python" width="30px" style="padding-right:10px;" src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png"/></i></a>
+<a1 href="https://www.youtube.com/@JaysonApableCombate/" style="--socia" sytle=""><i class='bx bxl-instagram'><img  align="left" alt="Python" width="30px" style="padding-right:10px;" src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png"/></i></a1>
 </h1>
   
 ## 📺 Latest YouTube Videos
