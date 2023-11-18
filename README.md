@@ -17,7 +17,7 @@ Feel free to connect with me on these platforms to stay updated on my coding jou
 
 ## 🧰 Technologies
 
-# I've Learning with a variety of technologies, and here are some of my favorites:
+I've Learning with a variety of technologies, and here are some of my favorites:
 
 <img align="left" alt="Python" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
 <img align="left" alt="C" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
