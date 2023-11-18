@@ -25,6 +25,8 @@ I've Learning with a variety of technologies, and here are some of my favorites:
 Feel free to connect with me on these platforms to stay updated on my coding journey!
 ## 🌐 Social Media & Profiles
 
+<img align="left" alt="Python" width="30px" style="padding-right:10px;" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" href="https://www.instagram.com/jaysonapable/" />
+
 - [GitHub](https://github.com/Jayson056)
 - [LinkedIn](https://www.linkedin.com/in/jayson-combate-8721771b3/)
 - [Instagram](https://www.instagram.com/jaysonapable/)
