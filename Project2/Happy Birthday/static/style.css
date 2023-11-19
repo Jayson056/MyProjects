@@ -1,3 +1,4 @@
+/* /bsit_website/app/static/style.css */
 body {
     font-family: 'Arial', sans-serif;
     background: linear-gradient(111.5deg, #4b2f4d 50%, #857a7a 50%);
@@ -27,3 +28,5 @@ label, input, textarea {
 #image_upload {
     margin-bottom: 20px;
 }
+
+/* Add additional styling as needed */
