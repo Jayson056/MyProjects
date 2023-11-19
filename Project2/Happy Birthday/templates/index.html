@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <title>Automated Pubmat</title>
+</head>
+<body>
+    <div class="welcome-message">
+        <h2>Welcome to BIRTHDAY PUBMAT AUTOMATED</h2>
+    </div>
+
+    <div class="logo-container">
+        <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="Logo" alt="" class="img-w" style="width: 50px; height: auto;">
+    </div>
+
+    <form action="/submit" method="post" enctype="multipart/form-data">
+        <label for="student_name">Student Name:</label>
+        <input type="text" id="student_name" name="student_name" required>
+
+        <label for="birth_date">Student Birth Date:</label>
+        <input type="date" id="birth_date" name="birth_date" required>
+
+        <label for="image_upload">Upload Image (PNG) Notes Applicable PNG Size must be 500 X 499:</label>
+        <input type="file" id="image_upload" name="image_upload" accept=".png" required>
+
+        <button type="submit">Generate Pubmat</button>
+    </form>
+</body>
+</html>

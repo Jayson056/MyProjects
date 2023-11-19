@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Result - BSIT Section</title>
+    <style>
+
+        .image-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px; /* Set a max-width for better responsiveness */
+            margin: auto; /* Center the container */
+        }
+
+        .background-image {
+            width: 80%;
+            height: auto;
+            display: block;
+            box-shadow: 0 0 50px rgba(0, 123, 255, 0.3); /* Set a blue box shadow */
+        }
+
+        .overlay-image1
+         {
+            position: absolute;
+            top: 8.6%;
+            left: 22%;
+            width: 46.8%;
+            height: auto;
+        }
+
+        .overlay-text {
+            position: absolute;
+            top: 74%;
+            left: 40%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 250%;
+            font-weight: bold;
+        }
+
+        .overlay-text2 {
+            position: absolute;
+            top: 81%;
+            left: 40%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 100%;
+            font-weight: bold;
+            background-color: rgb(87, 5, 5); /* Add a background color for highlighting */
+            padding: 2px; /* Add padding for better visual appearance */
+            border-radius: 3px; /* Add border radius for rounded corners */
+        }
+
+        .overlay-text3 {
+            position: absolute;
+            top: 38%;
+            left: 66%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 90%;
+            font-weight: bold;
+        }
+
+        .capture {
+            position: absolute;
+            top: 83%;
+            left: 55%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 90%;
+            font-weight: bold;
+
+
+        }
+
+        @media screen and (max-width: 768px) {
+            .overlay-text {
+                font-size: 6.2vw; /* Adjust font size for smaller screens */
+            }
+
+            .overlay-text2 {
+                font-size: 2vw; /* Adjust font size for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img class="background-image" src="static/Background/background.png" alt="Background Image">
+        <img class="overlay-image1" src="static/images/background.png" alt="Overlay Image 1">
+        <div class="overlay-text">HAPPY BIRTHDAY</div>
+        <div class="overlay-text overlay-text2">{{ student_name }}</div>
+        <div class="overlay-text3">{{ current_date }}</div>
+    </div>
+
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script>
+        function captureScreenshot() {
+            const container = document.querySelector('.image-container');
+    
+            // Set the desired width and height for the canvas
+            const canvasWidth = 480;
+            const canvasHeight = 410;
+    
+            html2canvas(container, { width: canvasWidth, height: canvasHeight }).then(function(canvas) {
+                const dataURL = canvas.toDataURL('image/png');
+                const downloadLink = document.createElement('a');
+                downloadLink.href = dataURL;
+                downloadLink.download = 'YourSaveIT.png';
+                downloadLink.click();
+            });
+        }
+    </script>
+    
+    <!-- Add button to trigger screenshot capture -->
+    <button class="capture" onclick="captureScreenshot()" style="color: rgb(0, 0, 0); padding: 2px; background-color:green; border-radius: 8px; font-size: 150%;">Save IT</button>
+    
+</body>
+</html>

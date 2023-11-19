@@ -1,0 +1,5 @@
+# /bsit_website/requirements.txt
+
+Flask==2.0.1
+Pillow==8.3.2
+# Add any other dependencies your project requires

@@ -1,0 +1,87 @@
+/* /bsit_website/app/static/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400&display=swap');
+
+:root {
+    --primary-color: #f9532d;
+    --primary-dark: #1F252E;
+}
+
+.logo-container {
+    margin-bottom: 20px;
+    animation: leftSideAni 1s ease forwards;
+}
+
+.logo-container img {
+    max-width: 100%;
+    height: auto;
+    animation: leftSideAni 1s ease forwards;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(111.5deg, #4b2f4d 50%, #fff 50%);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.welcome-message {
+    text-align: center;
+    font-size: 88%;
+    margin-bottom: 8%;
+    margin-top: 100px;
+    background-color: rgb(87, 5, 5); /* Add a background color for highlighting */
+    padding: 1.1px; /* Add padding for better visual appearance */
+    border-radius: 30px; /* Add border radius for rounded corners */
+}
+
+form {
+    max-width: 500px;
+    margin-bottom: 17%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 19px;
+    box-shadow: 0 0 50px rgba(0, 123, 255, 0.3); /* Set a blue box shadow */
+}
+
+label {
+    display: block;
+    font-size: 12px;
+    color: #050608;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+
+label1 {
+    color: beige;
+    font-size: 50px;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

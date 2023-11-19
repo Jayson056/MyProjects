@@ -1,0 +1,32 @@
+/* /bsit_website/app/static/style.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(111.5deg, #4b2f4d 50%, #857a7a 50%);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+    background-size: cover;
+    background-position: center;
+    width: 776px;
+    height: 673px;
+    position: relative;
+}
+
+label, input, textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#image_upload {
+    margin-bottom: 20px;
+}
+
+/* Add additional styling as needed */
