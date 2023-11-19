@@ -25,7 +25,7 @@ Welcome to the Birthday Pubmat Generator project for the BSIT Section! 🎉✨ T
 
 ## Screenshots
 
-![Sample Pubmat]([screenshots/sample_pubmat.png](https://github.com/Jayson056/MyProjects/blob/master/Project2/Happy%20Birthday/samplePUBMAT/YourSaveIT.png))
+![Sample Pubmat](https://github.com/Jayson056/MyProjects/blob/master/Project2/Happy%20Birthday/samplePUBMAT/YourSaveIT.png)
 
 ## Usage
 
