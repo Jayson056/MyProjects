@@ -11,15 +11,15 @@
         .image-container {
             position: relative;
             width: 100%;
-            max-width: 600px; /* Set a max-width for better responsiveness */
-            margin: auto; /* Center the container */
+            max-width: 600px;
+            margin: auto;
         }
 
         .background-image {
             width: 80%;
             height: auto;
             display: block;
-            box-shadow: 0 0 50px rgba(0, 123, 255, 0.3); /* Set a blue box shadow */
+            box-shadow: 0 0 50px rgba(0, 123, 255, 0.3);
         }
 
         .overlay-image1
@@ -49,9 +49,9 @@
             color: white;
             font-size: 100%;
             font-weight: bold;
-            background-color: rgb(87, 5, 5); /* Add a background color for highlighting */
-            padding: 2px; /* Add padding for better visual appearance */
-            border-radius: 3px; /* Add border radius for rounded corners */
+            background-color: rgb(87, 5, 5); 
+            padding: 2px;
+            border-radius: 3px;
         }
 
         .overlay-text3 {
@@ -78,11 +78,11 @@
 
         @media screen and (max-width: 768px) {
             .overlay-text {
-                font-size: 6.2vw; /* Adjust font size for smaller screens */
+                font-size: 6.2vw; 
             }
 
             .overlay-text2 {
-                font-size: 2vw; /* Adjust font size for smaller screens */
+                font-size: 2vw; 
             }
         }
     </style>
@@ -101,7 +101,6 @@
         function captureScreenshot() {
             const container = document.querySelector('.image-container');
     
-            // Set the desired width and height for the canvas
             const canvasWidth = 480;
             const canvasHeight = 410;
     
@@ -115,7 +114,6 @@
         }
     </script>
     
-    <!-- Add button to trigger screenshot capture -->
     <button class="capture" onclick="captureScreenshot()" style="color: rgb(0, 0, 0); padding: 2px; background-color:green; border-radius: 8px; font-size: 150%;">Save IT</button>
     
 </body>

@@ -5,7 +5,6 @@ import os
 
 app = Flask(__name__)
 
-# Updated destination folder to 'static/images'
 UPLOAD_FOLDER = 'static/images'
 ALLOWED_EXTENSIONS = {'png'}
 
@@ -29,19 +28,14 @@ def submit():
     birth_Date = request.form.get('birth_Date')
     current_date = datetime.now().strftime("%B-%d")
 
-    # Create the upload folder if it doesn't exist
     create_upload_folder()
 
-    # Handle image upload
     if 'image_upload' in request.files:
         image_file = request.files['image_upload']
         if image_file and allowed_file(image_file.filename):
-            filename = 'background.png'  # Save the image with a fixed filename
+            filename = 'background.png'
             image_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
             image_file.save(image_path)
-
-    # Process data and generate pubmat picture (implement this logic)
-
     return render_template('result.html', student_name=student_name, birthday_info=birthday_info, background_image=image_path, current_date=current_date)
 
 if __name__ == '__main__':
