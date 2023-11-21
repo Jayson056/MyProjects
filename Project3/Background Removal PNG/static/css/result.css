@@ -1,0 +1,58 @@
+body{
+    font-family: 'Outfit', sans-serif;
+    background: linear-gradient(94.5deg, #1F252E 50%, #fff 80%);
+    height: 100vh;
+    color: #ffffff;
+    margin-bottom: 8px auto;
+    
+    
+    
+  }
+
+h1{
+  margin-top: auto;
+  margin-bottom: 8px auto;
+  font-size: 150%;
+  text-align: center;
+  color: antiquewhite;
+  
+}
+
+h2{
+  margin-top: auto;
+  margin-bottom: 8px auto;
+  font-size: 80%;
+  text-align: center;
+  color: wheat;
+}
+
+.background-image{
+   margin-top:80px;
+   border-radius: 10%;
+   box-shadow: 0 0 15px #D1D9E6; 
+  }
+
+.buttons{
+  margin-top: auto;
+  margin-bottom: 8px auto;
+  text-align: center;
+}
+
+.footer{
+  margin-top: auto;
+  margin-bottom: 8px auto;
+  font-size: 50%;
+  text-align: center;
+  color: black;
+  border-radius: 80px;
+  border-box: 100%;
+  box-shadow: 0 0 100px blue; 
+}
+
+.header{
+  margin-top: auto;
+  margin-bottom: 8px auto;
+  text-align: center;
+  color: wheat;
+}
+

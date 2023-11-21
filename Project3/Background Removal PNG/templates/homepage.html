@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/homepage.css') }}">
+    <title>Image Background Remover</title>
+</head>
+<body style="text-align: center;">
+
+    <header>
+        <h1>Welcome to the Image Background Remover</h1>
+    </header>
+
+    <main>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/*" required>
+            <button type="submit">Upload and Remove Background</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Watermark image powered by collaboration with</p>
+      <p><a href="https://www.remove.bg" target="_blank"><img alt="GitHub" width="30px" src="{{ url_for('static', filename='ICON/removebg.png') }}"/></a></p>
+        <p><a href="https://github.com/Jayson056" target="_blank"><img alt="GitHub" width="30px" src="{{ url_for('static', filename='ICON/logo.png') }}"/></a></p>
+    </footer>
+
+</body>
+</html>

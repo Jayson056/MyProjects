@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/result.css') }}">
+    <title>Result</title>
+    <script>
+        function saveImage() {
+            var imgSrc = document.getElementById('backgroundImage').src;
+            var link = document.createElement('a');
+            link.href = imgSrc;
+            link.download = 'NoBackground.png_no_bg.png';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <h1>Image Processing App</h1>
+        <p style="font-size:70%">Enhance your images with our background removal tool!</p>
+    </header>
+    <div class="container">
+        <h2>Background Removed Success!</h2>
+        <img id="backgroundImage" style="max-width: 100%; margin: 80px auto 8px auto; display: block; margin-top: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);" class="background-image" src="{{ url_for('static', filename='save/NoBackground.png_no_bg.png') }}" alt="Background Image">
+        <div class="buttons">
+            <a href="{{ url_for('homepage') }}"><button style="background-color: #ADD8E6; border-radius: 5px;">Back to Home</button></a>
+            <button style="background-color: #00FF80; border-radius: 5px;" onclick="saveImage()">Save Image</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Thank you for using our image processing app! Click the social media icons to support us.</p>
+        <h3 style="text-align: center;">
+            <a href="https://www.instagram.com/jaysonapable/" style="--socia" sytle="">
+                <img alt="Instagram" width="30px" style="padding-right:10px; margin: 0 auto;" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"/>
+            </a>
+            <a href="https://www.linkedin.com/in/jayson-combate-8721771b3/" style="--socia" sytle="">
+                <img alt="LinkedIn" width="30px" style="padding-right:10px; margin: 0 auto;" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"/>
+            </a>
+            <a href="https://www.youtube.com/@JaysonApableCombate/" style="--socia" sytle="">
+                <img alt="YouTube" width="30px" style="padding-right:15px; margin: 0 auto;" src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png"/>
+            </a>
+            <a href="https://github.com/Jayson056" style="--socia" sytle="">
+                <img alt="GitHub" width="30px" style="padding-right:15px; margin: 0 auto;" src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"/>
+            </a>
+        </h3>
+    </footer>
+</body>
+</html>
